@@ -46,7 +46,7 @@ button:hover{
     background-color: rgb(41, 41, 126);
 }
 
-.color-acento{ color: blueviolet;}
+.color-acento{ color: rgb(2, 192, 192);}
 
 .container{
     max-width:  1400px;
@@ -63,7 +63,7 @@ header .logo{
     margin: 0px;
     padding: 25px 30px;
     font-weight: bold;
-    color: skyblue;
+    color: rgb(2, 192, 192);
     font-size: 1.5em; 
 }
 
@@ -88,7 +88,7 @@ header a{
 }
 
 header a:hover{
-    color: blueviolet;
+    color: rgb(6, 146, 146);
 }
 
 #hero{
@@ -144,7 +144,12 @@ header a:hover{
 }
 
 .carta :first-child{
-background-image: url("media/one.jpg");
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("media/one.jpg");
 
 }
 
@@ -169,6 +174,8 @@ background-image: url("media/one.jpg");
 
 }
 
+
+
  #hello .container {
      text-align: center ;
      padding: 200px 12px;
@@ -176,7 +183,8 @@ background-image: url("media/one.jpg");
  }
 
  #hello li{
-     margin: 12px 0px;
+     margin: 16px 0px;
+     font-weight: bold;
  }
 
  #informacion-contacto{
@@ -229,14 +237,14 @@ footer p{
 
      #My-History-with-tecnology .container{
          display:flex;
-         justify-content: center;
+         justify-content: space-evenly;
      }
 
      #My-History-with-tecnology .text {
          width: 50%;
          max-width: 620px;
          text-align: initial;
-         padding: 0px 30px;
+         padding-left: 30px;
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -254,4 +262,58 @@ footer p{
 
      }
 
+
+     #My-History-with-tecnology h2 {
+         margin-top: 0px;
+
+     }
+
+     #My-habilites .habilidades {
+         display: flex;
+         justify-content: center;
+         
+     }
+
+     #My-habilites p {
+         display: block;
+     }
+
+     #My-hbilities h3{
+         margin-top: 0px;
+     }
+
+
+
+     #My-habilites .carta{
+         padding: 50px;
+         margin-bottom: 30px;
+     }
+
+
+     #hello {
+        background-image: url("media/img-3.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px)   120px; 
+    }
+      
+     #hello .container{
+         text-align: initial;
+
+     }
+
+
+     #hello ul{
+         margin-left: 100px;
+     }
+
+
+    
  }
+
+ @media (min-width: 1200px ) {
+    #hello {
+        background-position-x:calc(100vw - 800px) ;
+    }
+     
+}
