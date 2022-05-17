@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size:3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+   font-size: 1.25em; 
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 1.5em;
+    font-size: bolder;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 2px solid rgb(0,0,0,0.7);
+    box-shadow: 2px 2px 10.32px rgb(0,0,0,0.53);
+    color: aliceblue;
+    background-color:darkblue;
+}
+
+button:hover{
+    background-color: rgb(41, 41, 126);
+}
+
+.color-acento{ color: blueviolet;}
+
+.container{
+    max-width:  1400px;
+    margin: auto;
+}
+
+header{
+    background-size: 726px;
+    position: absolute;
+    
+}
+
+header .logo{
+    margin: 0px;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: skyblue;
+    font-size: 1.5em; 
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Start2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+#My-History-with-tecnology .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#My-habilites{
+    background-color: rgb(30,30,30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+#My-habilites .container{
+    padding: 150px 0px ;
+
+}
+
+#My-habilites h2{
+    margin-top:   0;
+    font-size: 3.2em;
+}
+
+#My-habilites .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 15px;
+
+}
+
+.carta :first-child{
+background-image: url("media/one.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("media/vision.jpg");
+
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("media/more.jpg");
+
+}
+
+ #hello .container {
+     text-align: center ;
+     padding: 200px 12px;
+
+ }
+
+ #hello li{
+     margin: 12px 0px;
+ }
+
+ #informacion-contacto{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-color: rgb(30, 30, 30);
+     color: rgb(255, 255, 255);
+     height: 80vh;
+
+ }
+
+footer p{
+    margin: 0%;
+}
+
+
+ footer{
+     background-color: rgb(230,230,220);
+ }
+
+ footer .container{
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+
+ }
+
+ @media (min-width: 720px){
+     header{
+         position: fixed;
+        width: 100%;
+
+     } 
+    
+    
+    header.container{
+         flex-direction: row;
+         justify-content:space-between ;
+
+     }
+
+     header nav{
+         flex-direction: row;
+         padding-bottom: 0;
+         padding-right: 20px;
+     }
+
+     #My-History-with-tecnology .container{
+         display:flex;
+         justify-content: center;
+     }
+
+     #My-History-with-tecnology .text {
+         width: 50%;
+         max-width: 620px;
+         text-align: initial;
+         padding: 0px 30px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+
+     }
+
+     #My-History-with-tecnology .image-container{
+         background-image:url("media/image-1.jpg");
+         background-size:cover;
+         background-position: center center;
+         height: 500px;
+         width: 400px;
+         
+
+     }
+
+ }
